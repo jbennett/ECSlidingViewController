@@ -15,18 +15,18 @@
 {
     UIViewController *source = (UIViewController *)self.sourceViewController;
     UIViewController *destination = (UIViewController *)self.destinationViewController;
-    ECSlidingViewController *slide = source.slidingViewController;
-    ECSide side = (source == slide.underLeftViewController ||
-                   source.navigationController == slide.underLeftViewController ||
-                   source.tabBarController == slide.underLeftViewController) ? ECRight : ECLeft;
+    ECSlidingViewController *slideVC = source.slidingViewController;
+    ECSide side = (source == slideVC.underLeftViewController ||
+                   source.navigationController == slideVC.underLeftViewController ||
+                   source.tabBarController == slideVC.underLeftViewController) ? ECRight : ECLeft;
     
-    [slide anchorTopViewOffScreenTo:side animations:nil onComplete:^{
-        CGRect frame = source.slidingViewController.topViewController.view.frame;
-        slide.topViewController = destination;
-        slide.topViewController.view.frame = frame;
-        [slide resetTopView];
+    [slideVC anchorTopViewOffScreenTo:side animations:nil onComplete:^{
+        CGRect frame = slideVC.topViewController.view.frame;
+        slideVC.topViewController = destination;
+        slideVC.topViewController.view.frame = frame;
+        [slideVC resetTopView];
         
-        [destination.view addGestureRecognizer:slide.panGesture];
+        [destination.view addGestureRecognizer:slideVC.panGesture];
     }];
 }
 
