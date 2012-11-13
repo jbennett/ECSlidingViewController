@@ -21,7 +21,7 @@
   self.view.layer.shadowColor = [UIColor blackColor].CGColor;
   
   if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
-    self.slidingViewController.underLeftViewController  = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
+    self.slidingViewController.underLeftViewController  = [self.storyboard instantiateViewControllerWithIdentifier:@"SegueMenu"];
   }
   
   if (![self.slidingViewController.underRightViewController isKindOfClass:[UnderRightViewController class]]) {
