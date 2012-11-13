@@ -26,6 +26,7 @@
 		2750E7AF14CF1306007727A0 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2750E7AD14CF1306007727A0 /* UIImage+ImageWithUIView.m */; };
 		27FC94E014D0C14E0000B18C /* InitialSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FC94DF14D0C14E0000B18C /* InitialSlidingViewController.m */; };
 		27FC94E314D105C60000B18C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FC94E214D105C60000B18C /* QuartzCore.framework */; };
+		3B72C92F165296BA00A52233 /* EXSlidingSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B72C92E165296BA00A52233 /* EXSlidingSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,8 @@
 		27FC94DE14D0C14E0000B18C /* InitialSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialSlidingViewController.h; sourceTree = "<group>"; };
 		27FC94DF14D0C14E0000B18C /* InitialSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialSlidingViewController.m; sourceTree = "<group>"; };
 		27FC94E214D105C60000B18C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3B72C92D165296BA00A52233 /* EXSlidingSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXSlidingSegue.h; sourceTree = "<group>"; };
+		3B72C92E165296BA00A52233 /* EXSlidingSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXSlidingSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +173,8 @@
 				2750E7AB14CF1306007727A0 /* ECSlidingViewController.m */,
 				279E158D14D737F60028A9EE /* UIImage+ImageWithUIView.h */,
 				2750E7AD14CF1306007727A0 /* UIImage+ImageWithUIView.m */,
+				3B72C92D165296BA00A52233 /* EXSlidingSegue.h */,
+				3B72C92E165296BA00A52233 /* EXSlidingSegue.m */,
 			);
 			name = ECSlidingViewController;
 			path = Vendor/ECSlidingViewController;
@@ -250,6 +255,7 @@
 				27FC94E014D0C14E0000B18C /* InitialSlidingViewController.m in Sources */,
 				27498DCE14E96C75005C043E /* NavigationTopViewController.m in Sources */,
 				27498DD514E96EEF005C043E /* SampleTableViewController.m in Sources */,
+				3B72C92F165296BA00A52233 /* EXSlidingSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
